@@ -3,5 +3,7 @@ class User < ApplicationRecord
     find_or_create_by(
       google_id: payload['sub']
     )
+
+    payload
   end
 end
